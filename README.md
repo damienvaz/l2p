@@ -10,5 +10,5 @@ After installing it, test if the pdflatex is available throw terminal by writing
 
 #Instalation
 Just download the file and put to your $PATH directory. After that, see if it is in executable mode by doing a "ls -al". If not then "chmod 744 l2p".
-After that, use the command by invocating "l2p <file>".
+Finally, use the command by invocating "l2p <file>".
 
