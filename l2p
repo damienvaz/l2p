@@ -1,0 +1,14 @@
+#!/bin/bash
+FILE=$1
+REGEXTEX='^.+\.tex$'
+FILEPDF=${FILE//\.tex/\.pdf}
+
+if [ -f $FILE ]; then
+  if [[ $FILE =~ $REGEXTEX ]]; then 
+    pdflatex $FILE; open $FILEPDF
+  else
+    echo "File isn't a .tex"
+  fi
+else
+  echo "File doesn't exist"
+fi
